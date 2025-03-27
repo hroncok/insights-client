@@ -1,8 +1,19 @@
+"""
+:casecomponent: insights-client
+:requirement: RHSS-291297
+:polarion-project-id: RHELSS
+:polarion-include-skipped: false
+:polarion-lookup-method: id
+:subsystemteam: sst_csi_client_tools
+:caseautomation: Automated
+:upstream: Yes
+"""
+
 import pathlib
 import subprocess
 import sys
-
 import pytest
+from pytest_client_tools.util import Version
 
 
 PLAYBOOK_DIRECTORY = pathlib.Path(__file__).parent.absolute() / "playbooks"
